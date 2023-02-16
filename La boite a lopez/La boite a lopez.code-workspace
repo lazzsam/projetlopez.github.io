@@ -1,0 +1,11 @@
+{
+  "folders": [
+	{
+		"name": "La boite a lopez",
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "La boite a lopez"
+  }
+}

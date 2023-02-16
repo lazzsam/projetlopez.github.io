@@ -1,0 +1,131 @@
+/* GENERAL */
+html {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#main-container {
+  height: 100vh;
+}
+
+i {
+  cursor: pointer;
+}
+
+a {
+  color: lightgoldenrodyellow;
+}
+
+/* ASIDE */
+aside {
+  height: 100vh;
+}
+
+aside > #bg-amine {
+  position: absolute;
+  height: 100%;
+  width: 110%;
+  margin-left: -15px;
+  opacity: 1;
+  z-index: -1; /*  Regle le pb d'opacité qui s'applique aux deux image*/
+}
+
+aside > #header > #circle-amine {
+  height: 100px;
+  width: 100px;
+  border: 2px solid white;
+  border-radius: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+aside > #header > #title {
+  color: black;
+  text-shadow: 1px 1px 0 white;
+}
+
+aside > #bot-aside {
+  /* La height définie rend possible le align item en bas */
+  height: 77%;
+  display: flex;
+  align-items: end;
+}
+
+aside > #bot-aside > #icons {
+  color: lightgoldenrodyellow;
+  text-shadow: 1px 1px 0 black;
+}
+
+aside > #bot-aside > #icons > a > i {
+  font-size: 18px;
+  margin: 5px;
+}
+
+.fa-facebook-f:hover {
+  color: #1877f2;
+}
+
+.fa-twitter:hover {
+  color: rgb(29, 155, 240);
+}
+
+.fa-instagram:hover {
+  color: #d6249f;
+}
+/* MAIN */
+main {
+  background-color: lightgoldenrodyellow;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main > section#btns > button {
+  font-size: 17px;
+  color: #333;
+  background-color: white;
+  border: 2px solid lightgray;
+  padding: 10px;
+  margin: 15px;
+}
+
+main > section#btns > button:hover {
+  color: black;
+  border: 2px solid black;
+}
+
+/* test */
+
+.loader {
+  pointer-events: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: red;
+  animation: an1 1s ease infinite;
+}
+
+@keyframes an1 {
+  0% {
+    transform: rotate(0turn);
+  }
+
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+/* REPONSIVE TABLETS / MOBILES */
+@media only screen and (min-width: 767px) {
+  main {
+    background-color: blue;
+  }
+}
+
+/* @media only screen and (max-width: 992px) {
+  main {
+    background-color: red;
+  }
+} */
